@@ -34,7 +34,7 @@ export const EXPORT_FILENAME = "workflows.json";
 
 export const CLI_COMMANDS = {
   WATCH: "pnpm --filter n8n-nodes-base watch",
-  START: "N8N_DEV_RELOAD=true N8N_USER_MANAGEMENT_DISABLED=true pnpm start",
+  START: "N8N_DEV_RELOAD=true N8N_USER_MANAGEMENT_DISABLED=true N8N_SECURE_COOKIE=false pnpm start",
   EXPORT: `./packages/cli/bin/n8n export:workflow --all --pretty --output=./${EXPORT_FILENAME}`,
 };
 
